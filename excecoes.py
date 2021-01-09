@@ -32,8 +32,8 @@ Vamos dar continuidade ao estudo do tratamento de exceções múltiplas.
 def erro(x):
     try:
         eval(x)
-    except (TypeError, NameError): # Se TypeError ocorrer ou NameError ocorrer, execute a tratativa do bloco "except".
-        print("TypeError ocorreu, ou NameError ocorreu.")
+    except (TypeError, NameError):
+        print("TypeError ou NameError ocorreu.")
     except ValueError:
         print("ValueError")
     except ZeroDivisionError:
@@ -49,42 +49,4 @@ erro("int('a')")
 erro('10 / 0')
 
 erro('5 / 5')
-
-
-
-
-
-def error(a):
-    try:
-        eval(a)
-    except (TypeError, NameError, ZeroDivisionError, ValueError):
-        print("A Exceção TypeError ou NameError ou ZeroDivisionError foi levantada.")
-
-error("str+str") # TypeError
-
-error("zzz") # NameError
-
-error("10 / 0") # ZeroDivisionError
-
-error("int('b')") # ValueError
-
-
-
-
-
-
-
-
-
-def error1(a):
-    try:
-        a = 10 / 0
-        print(a)
-    except ZeroDivisionError:
-        print("ZeroDivisionError ocorreu aqui!!!")
-
-
-
-error1(0)
-
 
