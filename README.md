@@ -1,7 +1,7 @@
 # Exceções -  Python
 Tratando exceções (TraceBack - Erros)
 
-O Python fornece uma forma para específicarmos um conjunto de exceções na qual desejamos disponibilizar uma mesma solução.
+O Python fornece uma forma para especificarmos um conjunto de exceções na qual desejamos disponibilizar uma mesma solução.
 
 Não raramente poderíamos ter problemas diferentes que podem ser resolvidos com uma mesma solução.
 
