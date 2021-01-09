@@ -1,11 +1,5 @@
 """
-114 TRATAMENTO DE EXCEÇÕES MÚLTIPLAS II
-
-Vamos dar continuidade ao estudo do tratamento de exceções múltiplas.
-
-    "Diferentes tratamento para diferentes problemas".
-
-    Não raramente poderíamos ter problemas diferentes que podem ser resolvidos com uma mesma solução.
+TRATAMENTO DE EXCEÇÕES MÚLTIPLAS
 
     O Python fornece uma forma para específicarmos um conjunto de exceções na qual desejamos disponibilizar uma mesma
     solução.
@@ -25,9 +19,7 @@ Vamos dar continuidade ao estudo do tratamento de exceções múltiplas.
 
 
         Se não houve exceções, o cursor de execução passará por cima de todos os blocos "except".
-
 """
-
 
 def erro(x):
     try:
@@ -38,8 +30,7 @@ def erro(x):
         print("ValueError")
     except ZeroDivisionError:
         print("ZeroDivisionError")
-
-
+        
 erro('int+int')
 
 erro('a')
